@@ -5,12 +5,13 @@ import hamburgerMenuIcon from '../assets/icon-hamburger-menu.svg';
 
 const navLinks = [
     {anchor: '/', name: 'Home'},
-    {anchor: '', name: 'About'},
-    {anchor: '', name: 'Menu'},
+    {anchor: '/about', name: 'About'},
+    {anchor: '/menu', name: 'Menu'},
     {anchor: '/reservations', name: 'Reservations'},
-    {anchor: '', name: 'Order Online'},
-    {anchor: '', name: 'Login'},
+    {anchor: '/order', name: 'Order Online'},
+  {anchor: '/login', name: 'Login'},
   ];
+
   const Nav = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
   
@@ -35,4 +36,5 @@ const navLinks = [
       </nav>
     );
   };
+  
   export default Nav;
