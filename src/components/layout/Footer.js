@@ -20,6 +20,7 @@ const contacts = [
   { icon: faPhone, info: '(312) 593-2744', },
   { icon: faEnvelope, info: 'customer@littlelemon.com', },
 ];
+
 const socials = [
   { icon: faFacebook, name: 'facebook', },
   { icon: faTwitter, name: 'twitter', },
@@ -30,8 +31,8 @@ const socials = [
 const navLinks = Array.from(pages.values()).filter(page => page.anchorable);
 
 const Footer = () => {
-    return (
-      <footer className="site-footer">
+  return (
+    <footer className="site-footer">
       <div className="container grid">
         <img 
           className="site-footer-logo" 
@@ -43,7 +44,7 @@ const Footer = () => {
           <ul>
             {navLinks.map((navLink, index) => 
               <li key={index}>
-                 <Link to={navLink.path}>{navLink.name}</Link>
+                <Link to={navLink.path}>{navLink.name}</Link>
               </li>
             )}
           </ul>
@@ -63,7 +64,7 @@ const Footer = () => {
           {socials.map((social, index) => 
             <a 
               key={index} 
-              href={`https://www.${social.name}.com`}
+              href={`https://www.${social.name}.com`} 
               target="_blank" 
               rel="noreferrer" 
             >
@@ -72,8 +73,8 @@ const Footer = () => {
           )}
         </div>
       </div>
-      </footer>
-    );
-  };
-  
-  export default Footer;
+    </footer>
+  );
+};
+
+export default Footer;
