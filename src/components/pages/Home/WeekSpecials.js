@@ -5,6 +5,7 @@ import lemonDessertImage from './assets/lemon-dessert.jpg';
 import './WeekSpecials.css';
 import pages from '../../../utils/pages';
 import MealCard from './MealCard';
+
 const meals = [
   {
     name: 'Greek Salad',
@@ -29,6 +30,7 @@ const meals = [
       ingredient has been sourced and is as authentic as can be imagined.`,
   },
 ];
+
 const WeekSpecials = () => {
   return (
     <section className="container grid week-specials">
@@ -44,4 +46,5 @@ const WeekSpecials = () => {
     </section>
   );
 };
+
 export default WeekSpecials;

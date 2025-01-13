@@ -1,6 +1,7 @@
 import chefsMarioAndAdrianAImage from './assets/chefs-mario-and-adrian_a.jpg';
 import chefsMarioAndAdrianBImage from './assets/chefs-mario-and-adrian_b.jpg';
 import './OurStory.css';
+
 const OurStory = () => {
   return (
     <section className="container grid our-story">
@@ -30,4 +31,5 @@ const OurStory = () => {
     </section>
   );
 };
+
 export default OurStory;

@@ -1,5 +1,6 @@
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const ConfirmedBooking = () => {
   return (
     <div className="container confirmed-booking">
@@ -9,4 +10,5 @@ const ConfirmedBooking = () => {
     </div>
   );
 };
+
 export default ConfirmedBooking;
